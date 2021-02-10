@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel Example </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" />
+
+    <style>
+
+        body {
+            background-color: #333;
+           
+        }
+
+        .container {
+            width: 80%;
+            margin: 2% auto;
+        }
+
+        .carousel img {
+         width: 100%;
+
+        }
+
+        .slick-prev::before {
+            color:rgb(226, 167, 99);
+            
+            font-size: 50px;
+            
+            position: absolute;
+            left: -25px;
+        }
+
+        
+
+        .slick-next::before {
+            color:rgb(226, 167, 99);
+            font-size: 50px;
+            position: absolute;
+            right: -25px;
+
+        }
+
+    </style>
+
+
+
+
+</head>
+<body>
+
+    <section class="container">
+       
+        <div class="carousel">
+            <div><img src="https://i.picsum.photos/id/376/800/600.jpg?hmac=sanc0TY_DXKynmjaVfqAvbyIOYm1kzjTOoAoHcF7nzE" alt=""></div>
+            <div><img src="https://i.picsum.photos/id/723/800/600.jpg?hmac=K-A3GSKCQU6uNByd-yOw3SBKB4XRkGjj9oQQyH48ezE" alt=""></div>
+            <div><img src="https://i.picsum.photos/id/25/800/600.jpg?hmac=c3XP15iyQtTasbi_voCiOB1nHCq0O-mET-ccc6UZgqI" alt=""></div>
+          </div>
+
+    </section>
+
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous"></script>
+    
+    <script>
+        $(document).ready(function () {
+            $('.carousel').slick({});
+       });
+    </script>
+</body>
+</html>

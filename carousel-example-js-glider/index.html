@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/glider-js/1.7.3/glider.css" integrity="sha512-rEnjEH5u8xKS8NLcXC4nuZwT89x+tMB19ddbolNGE7DTl6o3JEo11kHAwryLlALFnxdONjO4xVpjunLWdiZR1A==" crossorigin="anonymous" />
+
+    <style>
+        body {
+            background-color: #666;
+        }
+
+        .container {
+            width: 100%;
+            margin: auto;
+
+        }
+
+        .glider > div {
+            border-width: 5px;
+            border-style: solid;
+            border-image-slice: 1;
+            border-image-source: linear-gradient(purple, white);
+        }
+
+        
+    </style>
+
+</head>
+<body>
+    
+
+    <section class="container">
+
+        <div class="glider-contain">
+            <div class="glider">
+              <div><img src="https://i.picsum.photos/id/266/400/300.jpg?hmac=fGNweu4Ez7fMr3VTqs_7hjvyCL3VPOxiU9Gh6Q9_g2o" alt=""></div>
+              <div><img src="https://i.picsum.photos/id/612/400/300.jpg?hmac=t5p8aVHOH1JjbLueuJqvD1nQnST0-Bo54BO-F7dzX58" alt=""></div>
+              <div><img src="https://i.picsum.photos/id/700/400/300.jpg?hmac=PZcV7R4QWhhPdXKEWPepXcuJPylOY78TLFE3jj7KuEU" alt=""></div>
+              <div><img src="https://i.picsum.photos/id/98/400/300.jpg?hmac=NSqjC8UUT7loFZ-nkoZqFTTygmcgampk6VyPCkU41tQ" alt=""></div>
+              <div><img src="https://i.picsum.photos/id/612/400/300.jpg?hmac=t5p8aVHOH1JjbLueuJqvD1nQnST0-Bo54BO-F7dzX58" alt=""></div>
+              <div><img src="https://i.picsum.photos/id/700/400/300.jpg?hmac=PZcV7R4QWhhPdXKEWPepXcuJPylOY78TLFE3jj7KuEU" alt=""></div>
+              <div><img src="https://i.picsum.photos/id/317/400/300.jpg?hmac=OzZjh6F_xWniQ9Xgsc7ZADYZz7ZBEA9JhJ_dKhXA0Mw" alt=""></div>
+              <div><img src="https://i.picsum.photos/id/613/400/300.jpg?hmac=pLV-Q4dG8OI1SthFpGGcQ5o0Djtzku0wPgCPIB1ruiw" alt=""></div>
+              <div><img src="https://i.picsum.photos/id/266/400/300.jpg?hmac=fGNweu4Ez7fMr3VTqs_7hjvyCL3VPOxiU9Gh6Q9_g2o" alt=""></div>
+              <div><img src="https://i.picsum.photos/id/612/400/300.jpg?hmac=t5p8aVHOH1JjbLueuJqvD1nQnST0-Bo54BO-F7dzX58" alt=""></div>
+              <div><img src="https://i.picsum.photos/id/700/400/300.jpg?hmac=PZcV7R4QWhhPdXKEWPepXcuJPylOY78TLFE3jj7KuEU" alt=""></div>
+              <div><img src="https://i.picsum.photos/id/670/400/300.jpg?hmac=QYv0yYYE74pa8v3orZhnp9o_FfB9rKTdNbYAPdd1474" alt=""></div>
+            </div>
+          
+            <button aria-label="Previous" class="glider-prev">«</button>
+            <button aria-label="Next" class="glider-next">»</button>
+            <div role="tablist" class="dots"></div>
+            
+        </div>
+
+
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/glider-js/1.7.3/glider.js" integrity="sha512-LB4vTYKgqUWA6w8MZm3zRsXW6bm5LAn6wUOsRFxSua4CHm3xxp6n3v9Ukupagi0AdpXK0FvpEdboPiVSYU3tJw==" crossorigin="anonymous"></script>
+
+   <script>
+      new Glider(document.querySelector('.glider'), {
+       slidesToShow: 5,
+       slidesToScroll: 1,
+       draggable: true,
+       dots: '.dots',
+       arrows: {
+         prev: '.glider-prev',
+         next: '.glider-next'
+       }
+     });
+   </script>
+</body>
+</html>
